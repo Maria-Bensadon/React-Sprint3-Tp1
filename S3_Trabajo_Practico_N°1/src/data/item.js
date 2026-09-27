@@ -1,185 +1,202 @@
+// src/data/productos.js
 
-// src/data/items.js
-
-export const canciones = [
+export const vinilos = [
   // Queen
   {
     id: 1,
-    nombre: "Bohemian Rhapsody",
+    nombre: "A Night at the Opera",
     artista: "Queen",
     anio: 1975,
     genero: "Rock Clásico / Progresivo",
-    duracion: "5:55",
-    esAcustica: false
+    esAcustica: false,
+    precio: 18500,
+    stock: 5,
   },
   {
     id: 2,
-    nombre: "Crazy Little Thing Called Love",
+    nombre: "Jazz",
     artista: "Queen",
-    anio: 1979,
+    anio: 1978,
     genero: "Rockabilly / Rock Clásico",
-    duracion: "2:42",
-    esAcustica: true
+    esAcustica: false,
+    precio: 16000,
+    stock: 3,
   },
 
   // Nirvana
   {
     id: 3,
-    nombre: "Smells Like Teen Spirit",
+    nombre: "Nevermind",
     artista: "Nirvana",
     anio: 1991,
     genero: "Grunge / Rock Alternativo",
-    duracion: "5:01",
-    esAcustica: false
+    esAcustica: false,
+    precio: 22000,
+    stock: 4,
   },
   {
     id: 4,
-    nombre: "About a Girl (MTV Unplugged)",
+    nombre: "MTV Unplugged in New York",
     artista: "Nirvana",
     anio: 1994,
     genero: "Acoustic Grunge",
-    duracion: "3:37",
-    esAcustica: true
+    esAcustica: true,
+    precio: 24000,
+    stock: 2,
   },
 
   // Blondie
   {
     id: 5,
-    nombre: "Heart of Glass",
+    nombre: "Parallel Lines",
     artista: "Blondie",
     anio: 1978,
     genero: "New Wave / Punk Rock",
-    duracion: "4:10",
-    esAcustica: false
+    esAcustica: false,
+    precio: 15000,
+    stock: 0,
   },
   {
     id: 6,
-    nombre: "One Way or Another",
+    nombre: "Eat to the Beat",
     artista: "Blondie",
-    anio: 1978,
+    anio: 1979,
     genero: "New Wave / Power Pop",
-    duracion: "3:35",
-    esAcustica: false
+    esAcustica: false,
+    precio: 14000,
+    stock: 0,
   },
 
   // Radiohead
   {
     id: 7,
-    nombre: "Creep",
+    nombre: "The Bends",
     artista: "Radiohead",
-    anio: 1992,
+    anio: 1995,
     genero: "Rock Alternativo",
-    duracion: "3:56",
-    esAcustica: false
+    esAcustica: false,
+    precio: 20000,
+    stock: 0,
   },
   {
     id: 8,
-    nombre: "Fake Plastic Trees",
+    nombre: "OK Computer",
     artista: "Radiohead",
-    anio: 1995,
-    genero: "Rock Alternativo / Acústico",
-    duracion: "4:50",
-    esAcustica: true
+    anio: 1997,
+    genero: "Rock Alternativo / Art Rock",
+    esAcustica: false,
+    precio: 25000,
+    stock: 2,
   },
 
   // The White Stripes
   {
     id: 9,
-    nombre: "Seven Nation Army",
+    nombre: "Elephant",
     artista: "The White Stripes",
     anio: 2003,
     genero: "Garage Rock",
-    duracion: "3:51",
-    esAcustica: false
+    esAcustica: false,
+    precio: 19000,
+    stock: 5,
   },
   {
     id: 10,
-    nombre: "We're Going to Be Friends",
+    nombre: "White Blood Cells",
     artista: "The White Stripes",
     anio: 2001,
-    genero: "Folk Rock / Acústico",
-    duracion: "2:22",
-    esAcustica: true
+    genero: "Garage Rock / Folk Rock",
+    esAcustica: false,
+    precio: 17000,
+    stock: 4,
   },
 
   // Green Day
   {
     id: 11,
-    nombre: "Basket Case",
+    nombre: "Dookie",
     artista: "Green Day",
     anio: 1994,
     genero: "Punk Rock",
-    duracion: "3:01",
-    esAcustica: false
+    esAcustica: false,
+    precio: 16500,
+    stock: 6,
   },
   {
     id: 12,
-    nombre: "Good Riddance (Time of Your Life)",
+    nombre: "Nimrod",
     artista: "Green Day",
     anio: 1997,
-    genero: "Acoustic Rock",
-    duracion: "2:34",
-    esAcustica: true
+    genero: "Punk Rock / Acoustic Rock",
+    esAcustica: false,
+    precio: 15500,
+    stock: 0,
   },
 
   // The Cranberries
   {
     id: 13,
-    nombre: "Zombie",
-    artista: "The Cranberries",
-    anio: 1994,
-    genero: "Rock Alternativo / Grunge",
-    duracion: "5:06",
-    esAcustica: false
-  },
-  {
-    id: 14,
-    nombre: "Linger",
+    nombre: "Everybody Else Is Doing It, So Why Can't We?",
     artista: "The Cranberries",
     anio: 1993,
     genero: "Dream Pop / Jangle Pop",
-    duracion: "4:34",
-    esAcustica: true
+    esAcustica: false,
+    precio: 18000,
+    stock: 4,
+  },
+  {
+    id: 14,
+    nombre: "No Need to Argue",
+    artista: "The Cranberries",
+    anio: 1994,
+    genero: "Rock Alternativo / Grunge",
+    esAcustica: false,
+    precio: 19500,
+    stock: 0,
   },
 
   // Oasis
   {
     id: 15,
-    nombre: "Wonderwall",
-    artista: "Oasis",
-    anio: 1995,
-    genero: "Britpop / Acústico",
-    duracion: "4:18",
-    esAcustica: true
-  },
-  {
-    id: 16,
-    nombre: "Don't Look Back in Anger",
+    nombre: "(What's the Story) Morning Glory?",
     artista: "Oasis",
     anio: 1995,
     genero: "Britpop / Rock",
-    duracion: "4:48",
-    esAcustica: false
+    esAcustica: false,
+    precio: 21000,
+    stock: 5,
+  },
+  {
+    id: 16,
+    nombre: "Definitely Maybe",
+    artista: "Oasis",
+    anio: 1994,
+    genero: "Britpop / Rock Alternativo",
+    esAcustica: false,
+    precio: 20000,
+    stock: 4,
   },
 
   // Kansas
   {
     id: 17,
-    nombre: "Carry On Wayward Son",
+    nombre: "Leftoverture",
     artista: "Kansas",
     anio: 1976,
     genero: "Rock Progresivo / Hard Rock",
-    duracion: "5:23",
-    esAcustica: false
+    esAcustica: false,
+    precio: 17500,
+    stock: 3,
   },
   {
     id: 18,
-    nombre: "Dust in the Wind",
+    nombre: "Point of Know Return",
     artista: "Kansas",
     anio: 1977,
-    genero: "Folk Rock / Acústico",
-    duracion: "3:26",
-    esAcustica: true
+    genero: "Rock Progresivo / Folk Rock",
+    esAcustica: false,
+    precio: 16500,
+    stock: 2,
   },
 
   // AC/DC
@@ -189,8 +206,9 @@ export const canciones = [
     artista: "AC/DC",
     anio: 1980,
     genero: "Hard Rock",
-    duracion: "4:15",
-    esAcustica: false
+    esAcustica: false,
+    precio: 23000,
+    stock: 5,
   },
   {
     id: 20,
@@ -198,7 +216,8 @@ export const canciones = [
     artista: "AC/DC",
     anio: 1979,
     genero: "Hard Rock",
-    duracion: "3:28",
-    esAcustica: false
-  }
+    esAcustica: false,
+    precio: 21500,
+    stock: 0,
+  },
 ];
