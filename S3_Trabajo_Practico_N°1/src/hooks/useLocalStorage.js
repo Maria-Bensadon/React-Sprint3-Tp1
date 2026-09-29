@@ -23,7 +23,6 @@ export const useLocalStorage = (clave, vector) => {
         const estadoJSON = JSON.stringify(valor);
 
         localStorage.setItem(clave, estadoJSON);
-        // console.log(`Guardado exitosamente bajo el nombre: ${clave}`);
     }, [valor]);
 
     return [valor, setValor];

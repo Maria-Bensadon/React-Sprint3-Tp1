@@ -8,7 +8,21 @@ import { vinilos } from "./data/item";
 import { BarraBusqueda } from "./components/SearchBar";
 
 function App() {
-  const { miLista, agregarVinilo, vaciarLista } = useMiLista();
+
+  const { miCarrito, agregarVinilo, vaciarLista } = useMiLista();
+
+  /**
+    const {
+  carrito,
+  cantidadTotal,
+  total,
+  estaEnElCarrito,
+  agregar,
+  cambiarCantidad,
+  quitar,
+  vaciar,
+} = useCarrito();
+   */
 
   // BUSCADOR
   const [busqueda, setBusqueda] = useState("");
@@ -25,7 +39,7 @@ function App() {
   }, [miLista]);
 
   return (
-    <body>
+    <>
       <div>
         {panelAbierto ? (
           <CarritoModal
@@ -52,7 +66,7 @@ function App() {
           />
         </div>
       </main>
-    </body>
+    </>
   );
 }
 
