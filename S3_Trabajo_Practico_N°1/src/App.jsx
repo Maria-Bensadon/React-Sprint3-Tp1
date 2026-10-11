@@ -1,71 +1,46 @@
-import { useEffect, useState } from "react";
+import { useEffect } from "react";
 import { BarraNavegacion } from "./components/layout/Navbar";
-import { ListaVinilos } from "./components/ProductoList";
 import { CarritoModal } from "./components/CarritoModal";
 import { useToggle } from "./hooks/useToggle";
-import { useMiLista } from "./hooks/onMusic";
+import { useCarritoContexto } from "./context/CarritoContext";
+import { Tienda } from "./components/views/Tienda";
 import { vinilos } from "./data/item";
-import { BarraBusqueda } from "./components/SearchBar";
+import { ThemeSwitcher } from "./components/ThemeSwitcher";
+import { Footer } from "./components/layout/Footer";
+
 
 function App() {
-
-  const { miCarrito, agregarVinilo, vaciarLista } = useMiLista();
-
-  /**
-    const {
-  carrito,
-  cantidadTotal,
-  total,
-  estaEnElCarrito,
-  agregar,
-  cambiarCantidad,
-  quitar,
-  vaciar,
-} = useCarrito();
-   */
-
-  // BUSCADOR
-  const [busqueda, setBusqueda] = useState("");
+  const { miCarrito, agregarVinilo, vaciarCarrito, carritoTotalUnidades } =
+    useCarritoContexto();
 
   // PANEL
   const [panelAbierto, setPanelAbierto] = useToggle(false); // valor boleano o bandera
 
   useEffect(() => {
-    if (miLista.length === 0) {
+    if (carritoTotalUnidades === 0) {
       document.title = "OnMusic";
     } else {
-      document.title = `Mi Lista ${miLista.length} | OnMusic`;
+      document.title = `Mi Carrito ${carritoTotalUnidades} | OnMusic`;
     }
-  }, [miLista]);
+  }, [miCarrito]);
 
   return (
     <>
       <div>
         {panelAbierto ? (
-          <CarritoModal
-            miLista={miLista}
-            setPanelAbierto={setPanelAbierto}
-            agregarVinilo={agregarVinilo}
-            vaciarLista={vaciarLista}
-          />
+          <CarritoModal setPanelAbierto={setPanelAbierto} />
         ) : null}
       </div>
       <div className="sticky top-0 z-50">
-        <BarraNavegacion miLista={miLista} setPanelAbierto={setPanelAbierto} />
+        <BarraNavegacion setPanelAbierto={setPanelAbierto} />
       </div>
       <div>
-        <BarraBusqueda busqueda={busqueda} setBusqueda={setBusqueda} />
+        <Tienda vinilos={vinilos} />
       </div>
-      <main>
-        <div>
-          <ListaVinilos
-            vinilos={vinilos}
-            agregarVinilo={agregarVinilo}
-            miLista={miLista}
-            busqueda={busqueda}
-          />
-        </div>
-      </main>
+      <div>
+        <ThemeSwitcher/>
+      </div>
+      <div><Footer/></div>
     </>
   );
 }

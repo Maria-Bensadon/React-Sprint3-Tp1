@@ -1,6 +1,6 @@
 import { Card } from "./ProductoCard";
 
-export const ListaVinilos = ({ vinilos, agregarVinilo, miLista, busqueda }) => {
+export const ListaVinilos = ({ vinilos, busqueda }) => {
   // vinilos filtrados para el Buscador
   const vinilosFiltrados = vinilos.filter((vinilo) =>
     vinilo.nombre.toLowerCase().includes(busqueda.toLowerCase()),
@@ -28,11 +28,9 @@ export const ListaVinilos = ({ vinilos, agregarVinilo, miLista, busqueda }) => {
             genero={vinilo.genero}
             anio={vinilo.anio}
             vinilo={vinilo}
-            agregarVinilo={agregarVinilo}
             esAcustica={vinilo.esAcustica}
             precio={vinilo.precio}
             stock={vinilo.stock}
-            estaListada={miLista.some((item) => item.id === vinilo.id)}
           />
         ))}
       </div>

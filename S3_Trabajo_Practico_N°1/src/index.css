@@ -21,7 +21,7 @@
     --spacing-grid-margin: 24px;
     --spacing-grid-gutter: 24px;
 
-    /* Colores exactos de tu tailwind-config */
+    /* Colores exactos de tu tailwind-config (tema oscuro) */
     --color-secondary-fixed: #d8e2ff;
     --color-on-error: #690005;
     --color-inverse-on-surface: #2f3034;
@@ -71,16 +71,71 @@
     --color-on-surface: #e2e2e6;
 }
 
-/* Clases y estilos que estaban en la etiqueta <style> de landing.html */
+/* Variables base (tema oscuro, el que se ve por defecto) */
 :root {
     --border-bauhaus: 2px solid #2D3139;
     --shadow-bauhaus: 4px 4px 0px #000000;
     --shadow-bauhaus-hover: 6px 6px 0px #000000;
+
+    --bg-pagina: #121417;
+    --texto-pagina: #e2e2e6;
+    --bg-superficie: #1A1D23;
+}
+
+/* Tema claro: redefine las variables cuando <html> tiene la clase "light".
+   Tiene que ir DESPUES de :root para que gane. */
+.light {
+    --bg-pagina: #b3ab97;
+    --texto-pagina: #1a1c1f;
+    --bg-superficie: #cac3af;
+
+    --color-background: #b3ab97;
+    --color-on-background: #1a1c1f;
+    --color-surface: #b3ab97;
+    --color-on-surface: #1a1c1f;
+    --color-surface-dim: #a09885;
+    --color-surface-bright: #bcb5a1;
+    --color-surface-variant: #a99f8f;
+    --color-on-surface-variant: #3a2e2c;
+    --color-surface-container-lowest: #beb7a3;
+    --color-surface-container-low: #b0a894;
+    --color-surface-container: #aaa28e;
+    --color-surface-container-high: #a39b88;
+    --color-surface-container-highest: #9d9582;
+    --color-surface-tint: #bb152c;
+    --color-outline: #857372;
+    --color-outline-variant: #d8c2c0;
+
+    --color-primary: #bb152c;
+    --color-on-primary: #ffffff;
+    --color-primary-container: #ffdad8;
+    --color-on-primary-container: #410007;
+    --color-secondary: #0058c6;
+    --color-on-secondary: #ffffff;
+    --color-secondary-container: #d8e2ff;
+    --color-on-secondary-container: #001a41;
+    --color-tertiary: #795900;
+    --color-on-tertiary: #ffffff;
+    --color-tertiary-container: #ffdea2;
+    --color-on-tertiary-container: #261900;
+
+    --color-error: #ba1a1a;
+    --color-on-error: #ffffff;
+    --color-error-container: #ffdad6;
+    --color-on-error-container: #410002;
+
+    --color-inverse-surface: #2f3034;
+    --color-inverse-on-surface: #f1f0f4;
+    --color-inverse-primary: #ffb3b1;
+
+    --shadow-bauhaus: 4px 4px 0px #5c5648;
+    --shadow-bauhaus-hover: 6px 6px 0px #5c5648;
+    --border-bauhaus: 2px solid #8f8774;
 }
 
 body {
-    background-color: #121417;
-    color: #e2e2e6;
+    background-color: var(--bg-pagina);
+    color: var(--texto-pagina);
     font-family: var(--font-body-md);
     -webkit-font-smoothing: antialiased;
 }
@@ -98,7 +153,7 @@ body {
 }
 
 .bauhaus-surface {
-    background-color: #1A1D23;
+    background-color: var(--bg-superficie);
 }
 
 .bauhaus-shadow {
@@ -148,4 +203,33 @@ body {
 .tag-ochre {
     border: 2px solid #FFBE0B;
     color: #FFBE0B;
+}
+
+/* Colores de marca ajustados para el tema claro */
+.light .btn-primary {
+    background-color: #c9444d;
+}
+
+.light .btn-secondary {
+    color: #2456a6;
+    border-color: #2456a6;
+}
+
+.light .btn-secondary:hover {
+    background-color: rgba(36, 86, 166, 0.12);
+}
+
+.light .tag-red {
+    color: #b02f39;
+    border-color: #b02f39;
+}
+
+.light .tag-blue {
+    color: #2456a6;
+    border-color: #2456a6;
+}
+
+.light .tag-ochre {
+    color: #6b4e00;
+    border-color: #6b4e00;
 }

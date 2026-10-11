@@ -1,25 +1,32 @@
 import { createContext, useContext } from "react";
-import { useMiLista } from "../hooks/onMusic";
+import { useMiCarrito } from "../hooks/useCarrito";
 
-const MiContext = createContext(null); 
+// 1 - Crear el contexto
+const ContextoCarrito = createContext(null);
 
-export const CarritoProvider = ({children}) => {
+// 2 - Proveedor
+export const CarritoProvider = ({ children }) => {
 
-    const valor = useMiLista();
+    const valorCarrito = useMiCarrito();
 
-    return(
-        <MiContext.Provider value={valor}>
+    return (
+        <ContextoCarrito.Provider value={valorCarrito}>
             {children}
-        </MiContext.Provider>
-    ); 
-}
+        </ContextoCarrito.Provider>
+    );
+};
 
-export const useMiCarritoContext = () => {
-    const contexto = useContext(MiContext); 
+// 3 - Hook de context
+export const useCarritoContexto = () => {
 
-    if(!contexto) {
-        throw new Error('useMiCarritoContext() tiene que usarse dentro de <MiContext.Provider>'); 
+    // guarda el valor de ContextoCarrito en una nueva variable
+    const obtenerContexto = useContext(ContextoCarrito);
+
+    if (!obtenerContexto) {
+        throw new Error(
+            "useCarritoContexto() tiene que usarse dentro de <ContextoCarrito.Provider>",
+        );
     }
 
-    return contexto; 
-}
+    return obtenerContexto;
+};

@@ -1,0 +1,35 @@
+
+
+//=================================================
+//                  LISTO
+//=================================================
+    Bloque A - Arquitectura y limpieza
+        - useLocalStorage.js
+        - utils/formato.js
+
+    Bloque B - Carrito con cantidades y Context 
+     - hook - useCarrito.js;
+     - cantidades
+     - context/CarritoContext.jsx 
+        exporta:
+            - provider
+            - consumidor
+
+
+
+
+//=================================================
+//                 EN PROCESO
+//=================================================
+     Bloque B - Carrito con cantidades y Context 
+     - context/ThemeContext.jsx
+
+
+//=================================================
+//                    DUDAS
+//=================================================
+
+
+
+
+
