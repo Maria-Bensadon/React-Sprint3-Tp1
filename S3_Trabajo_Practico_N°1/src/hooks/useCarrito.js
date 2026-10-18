@@ -45,7 +45,7 @@ export const useMiCarrito = () => {
     );
   };
 
-  // carrito total de unidades
+  // carrito total de unidades 
   const carritoTotalUnidades = miCarrito.reduce(
     (total, item) => (total + item.cantidad), 0,
   );

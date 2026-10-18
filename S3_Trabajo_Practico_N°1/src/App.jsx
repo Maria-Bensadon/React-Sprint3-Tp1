@@ -8,7 +8,6 @@ import { vinilos } from "./data/item";
 import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { Footer } from "./components/layout/Footer";
 
-
 function App() {
   const { miCarrito, agregarVinilo, vaciarCarrito, carritoTotalUnidades } =
     useCarritoContexto();
@@ -32,15 +31,14 @@ function App() {
         ) : null}
       </div>
       <div className="sticky top-0 z-50">
-        <BarraNavegacion setPanelAbierto={setPanelAbierto} />
+        <BarraNavegacion setPanelAbierto={setPanelAbierto}/>
       </div>
       <div>
         <Tienda vinilos={vinilos} />
       </div>
       <div>
-        <ThemeSwitcher/>
+        <Footer />
       </div>
-      <div><Footer/></div>
     </>
   );
 }

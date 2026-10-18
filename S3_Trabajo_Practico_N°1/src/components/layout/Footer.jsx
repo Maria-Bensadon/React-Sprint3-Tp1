@@ -3,10 +3,10 @@ export const Footer = () => {
     <footer className="bauhaus-surface full-width bottom-0 border-t-2 border-surface-variant dark:border-surface-variant mt-auto">
       <div className="flex flex-col md:flex-row justify-between items-center w-full px-grid-margin py-xl gap-md max-w-7xl mx-auto">
         <div className="font-label-bold text-label-bold text-on-surface">
-          Trabajo Práctico Nro 1 · Sprint 3 · Módulo 4: React
+          Módulo 4: React · Sprint 3 · Trabajo Práctico Nro 1
         </div>
         <div className="font-mono-code text-mono-code uppercase text-on-surface-variant">
-          REACT - VITE - TAILWIND CSS
+          REACT - VITE - TAILWIND CSS 
         </div>
       </div>
     </footer>

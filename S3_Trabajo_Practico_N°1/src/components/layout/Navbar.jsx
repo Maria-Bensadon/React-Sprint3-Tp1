@@ -1,6 +1,7 @@
 import { useCarritoContexto } from "../../context/CarritoContext";
+import { ThemeSwitcher } from "../ThemeSwitcher";
 
-export const BarraNavegacion = ({setPanelAbierto }) => {
+export const BarraNavegacion = ({ setPanelAbierto }) => {
   const { carritoTotalUnidades } = useCarritoContexto();
 
   return (
@@ -11,13 +12,20 @@ export const BarraNavegacion = ({setPanelAbierto }) => {
       >
         OnMusic
       </h1>
-      <button
-        onClick={setPanelAbierto}
-        className="btn-primary bauhaus-interactive bauhaus-shadow px-4 py-2 font-bold uppercase tracking-wider text-sm rounded-none cursor-pointer"
-      >
-        Carrito 🛒 (
-        {carritoTotalUnidades > 0 ? <span>{carritoTotalUnidades}</span> : null})
-      </button>
+      <button></button>
+      <div className="flex items-center gap-3">
+        <ThemeSwitcher/>
+        <button
+          onClick={setPanelAbierto}
+          className="btn-primary bauhaus-interactive bauhaus-shadow px-4 py-2 font-bold uppercase tracking-wider text-sm rounded-none cursor-pointer"
+        >
+          Carrito 🛒 (
+          {carritoTotalUnidades > 0 ? (
+            <span>{carritoTotalUnidades}</span>
+          ) : null}
+          )
+        </button>
+      </div>
     </nav>
   );
 };

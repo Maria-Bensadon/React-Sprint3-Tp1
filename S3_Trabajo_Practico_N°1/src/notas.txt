@@ -14,6 +14,8 @@
         exporta:
             - provider
             - consumidor
+     - context/ThemeContext.jsx
+            - revisar footer 
 
 
 
@@ -21,14 +23,26 @@
 //=================================================
 //                 EN PROCESO
 //=================================================
-     Bloque B - Carrito con cantidades y Context 
-     - context/ThemeContext.jsx
+
+    - revisar prop drilling 
+    - revisar className 
+
+    Bloque C - Checkout con React Hook Form
+        - Instalar React Hook Form
+            npm install react-hook-form
+        - 
+        
+
+
+
 
 
 //=================================================
-//                    DUDAS
+//                PENDIENTES
 //=================================================
-
+    Repaso General | LISTO
+    Repaso por bloques | 
+    Rearmar el flujo de datos | 
 
 
 

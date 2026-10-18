@@ -5,7 +5,7 @@ export const ThemeSwitcher = () => {
 
   return (
     <button type="button" onClick={temaOpuesto}>
-      {modoOscuro ? "Modo Claro" : "Modo Oscuro"}
+      {modoOscuro ? "☀️" : "🌑"}
     </button>
   );
 };
