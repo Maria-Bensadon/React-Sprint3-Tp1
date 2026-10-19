@@ -96,7 +96,9 @@ export const CarritoModal = ({ setPanelAbierto }) => {
 
           <button
             onClick={() => {
-              vaciarCarrito();
+              if (confirm("¿Vaciar el carrito?")) {
+                vaciarCarrito();
+              }
             }}
             className="w-full btn-primary bauhaus-interactive bauhaus-shadow py-3 font-bold uppercase tracking-wider text-sm cursor-pointer"
           >

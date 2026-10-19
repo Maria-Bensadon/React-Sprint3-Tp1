@@ -3,3 +3,7 @@ export function formatearPrecio(numero) {
     style: 'currency', currency: 'ARS', maximumFractionDigits: 0,
   });
 }
+
+export const calcularPrecio = (item) => {
+  return formatearPrecio(item.precio * item.cantidad); 
+}

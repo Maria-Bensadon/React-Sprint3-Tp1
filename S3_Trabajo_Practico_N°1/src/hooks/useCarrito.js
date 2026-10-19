@@ -45,21 +45,21 @@ export const useMiCarrito = () => {
     );
   };
 
-  // carrito total de unidades 
+  // carrito total de unidades
   const carritoTotalUnidades = miCarrito.reduce(
-    (total, item) => (total + item.cantidad), 0,
+    (total, item) => total + item.cantidad,
+    0,
   );
 
   // total precio
   const totalPrecio = miCarrito.reduce(
-    (total, item) => (total + item.precio * item.cantidad), 0,
+    (total, item) => total + item.precio * item.cantidad,
+    0,
   );
 
   // Vaciar carrito
   const vaciarCarrito = () => {
-    if (confirm("Deseas eliminar la carrito personal")) {
-      setMiCarrito([]);
-    }
+    setMiCarrito([]);
   };
 
   return {

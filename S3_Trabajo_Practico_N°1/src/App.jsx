@@ -1,12 +1,12 @@
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { BarraNavegacion } from "./components/layout/Navbar";
 import { CarritoModal } from "./components/CarritoModal";
 import { useToggle } from "./hooks/useToggle";
 import { useCarritoContexto } from "./context/CarritoContext";
 import { Tienda } from "./components/views/Tienda";
 import { vinilos } from "./data/item";
-import { ThemeSwitcher } from "./components/ThemeSwitcher";
 import { Footer } from "./components/layout/Footer";
+import { Formulario } from "./components/views/Checkout";
 
 function App() {
   const { miCarrito, agregarVinilo, vaciarCarrito, carritoTotalUnidades } =
@@ -23,6 +23,12 @@ function App() {
     }
   }, [miCarrito]);
 
+  const [pedido, setPedido] = useState(null); 
+
+  const confirmar = (pedido) => {
+    setPedido(pedido); 
+  }; 
+
   return (
     <>
       <div>
@@ -36,6 +42,7 @@ function App() {
       <div>
         <Tienda vinilos={vinilos} />
       </div>
+      <Formulario onConfirmar={confirmar}/>
       <div>
         <Footer />
       </div>
