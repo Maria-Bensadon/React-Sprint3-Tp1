@@ -42,5 +42,5 @@ Me costó entender el uso del contexto, o sea, entendi que era pero me costo ent
 El ThemeSwitcher lo habia hecho sin el context, primero siguiendo el video de la clase 3 del sprint 2.
 Y despues cuando lo empece a armarlo con el context, y el useEffect no sabia como armarlo.
 
-Me cuesta entender como o donde ponerlo en App.jsx. 
+La gama de colores del tema claro o (.ligth) se armo con IA. 
 
