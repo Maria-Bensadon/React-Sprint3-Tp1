@@ -10,6 +10,7 @@ export const Modal = ({ setPanelAbierto, children }) => {
       >
         {children}
       </div>
+      
     </div>
   );
 };

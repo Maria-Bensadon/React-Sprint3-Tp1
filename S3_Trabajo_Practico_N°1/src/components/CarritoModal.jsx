@@ -2,7 +2,7 @@ import { useCarritoContexto } from "../context/CarritoContext";
 import { Modal } from "./ui/Modal";
 import { formatearPrecio } from "../utils/formato";
 
-export const CarritoModal = ({ setPanelAbierto }) => {
+export const CarritoModal = ({ setPanelAbierto, irAlFormulario }) => {
   const { miCarrito, vaciarCarrito, totalPrecio, quitar, cambiarCantidad } =
     useCarritoContexto();
 
@@ -89,7 +89,7 @@ export const CarritoModal = ({ setPanelAbierto }) => {
           <button
             onClick={setPanelAbierto}
             aria-label="Cerrar"
-            className="w-full btn-secondary bauhaus-interactive py-2 uppercase tracking-wider text-sm cursor-pointer"
+            className="w-full btn-secondary bauhaus-interactive py-2 uppercase tracking-wider text-sm italic cursor-pointer"
           >
             Cerrar
           </button>
@@ -100,9 +100,18 @@ export const CarritoModal = ({ setPanelAbierto }) => {
                 vaciarCarrito();
               }
             }}
-            className="w-full btn-primary bauhaus-interactive bauhaus-shadow py-3 font-bold uppercase tracking-wider text-sm cursor-pointer"
+            disabled={miCarrito.length === 0}
+            className="w-full btn-secondary bauhaus-interactive bauhaus-shadow py-2 uppercase tracking-wider text-sm italic cursor-pointer"
           >
             Vaciar Lista
+          </button>
+
+          <button
+            onClick={irAlFormulario}
+            disabled={miCarrito.length === 0}
+            className="w-full btn-primary bauhaus-interactive py-3 uppercase tracking-wider font-bold text-sm cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
+          >
+            Comprar
           </button>
         </div>
       </>

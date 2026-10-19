@@ -76,7 +76,7 @@ export const Formulario = ({ onConfirmar }) => {
           <label htmlFor="nombre">Nombre Completo: </label>
           <input
             id="nombre"
-            aria-invalid={errors.nombre? "true" : "false"}
+            aria-invalid={errors.nombre ? "true" : "false"}
             aria-describedby="error-nombre"
             type="text"
             {...register("nombre", {
@@ -96,7 +96,7 @@ export const Formulario = ({ onConfirmar }) => {
           <label htmlFor="email">Email: </label>
           <input
             id="email"
-            aria-invalid={errors.nombre? "true" : "false"} // narrador
+            aria-invalid={errors.nombre ? "true" : "false"} // narrador
             aria-describedby="error-nombre" // indica el elemento
             type="text"
             {...register("email", {
@@ -193,7 +193,7 @@ export const Formulario = ({ onConfirmar }) => {
           />
           {errors.terminos && <p>{errors.terminos.message}</p>}
         </div>
-        <button type="submit">Confirmar pedido</button>
+        <button type="submit" >Confirmar pedido</button>
       </form>
     </div>
   );
