@@ -11,11 +11,11 @@ export const Tienda = () => {
       <div>
         <BarraBusqueda busqueda={busqueda} setBusqueda={setBusqueda} />
       </div>
-      <main>
+      <section>
         <div>
           <ListaVinilos vinilos={vinilos} busqueda={busqueda} />
         </div>
-      </main>
+      </section>
     </>
   );
 };

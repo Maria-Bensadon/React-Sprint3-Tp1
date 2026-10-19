@@ -38,9 +38,22 @@ Qué estado NO puse en un contexto y por qué.
 En app, ya no se pasan miCarrito, agregarVinilo, vaciarLista. Es decir, ya no maneja o coordina las funciones de miCarrito, sino que gestiona los componentes de vistas (Tienda.jsx, Checkout.jsx, Confirmacion.jsx) las cuales agrupan, segun corresponda las diferentes funcionalidades.
 
 ## Qué generé con IA
-Me costó entender el uso del contexto, o sea, entendi que era pero me costo entender como usarlo.
-El ThemeSwitcher lo habia hecho sin el context, primero siguiendo el video de la clase 3 del sprint 2.
-Y despues cuando lo empece a armarlo con el context, y el useEffect no sabia como armarlo.
+En Card me ayudo con el manejo de la disponibilidad de los vinilos. 
 
-La gama de colores del tema claro o (.ligth) se armo con IA. 
+El ThemeSwitcher lo habia hecho sin el context, primero siguiendo el video de la clase 3 del sprint 2. Y despues cuando lo empece a armarlo con el context, y el useEffect no sabia como armarlo y me explico y me lo paso la IA.
 
+La gama de colores del tema claro (.ligth) y sus clases lo armó la IA.
+
+En el formulario me ayudo con los patterns, y con la funcion confirmacion porque no entendia.
+
+En App.jsx, no entendia como hacer que se vea una sola vista...
+ "
+    {vista === VISTAS.TIENDA && <Tienda />}
+        {vista === VISTAS.CHECKOUT && <Formulario onConfirmar={confirmar} />}
+        {vista === VISTAS.CONFIRMACION && (
+          <Confirmacion nombre={pedido.nombre} atras={atras} />
+        )}
+
+ "
+
+Realiza los estilos, que despues puedo o no corregir segun la vista.
