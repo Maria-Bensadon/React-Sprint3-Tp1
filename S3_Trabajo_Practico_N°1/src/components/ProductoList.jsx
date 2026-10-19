@@ -7,7 +7,7 @@ export const ListaVinilos = ({ vinilos, busqueda }) => {
   );
 
   return (
-    <main className="px-6 py-6">
+    <article className="px-6 py-6">
       <h2 className="font-bold text-xl mb-6">Lista de vinilos disponibles</h2>
 
       {vinilosFiltrados.length === 0 && (
@@ -34,6 +34,6 @@ export const ListaVinilos = ({ vinilos, busqueda }) => {
           />
         ))}
       </div>
-    </main>
+    </article>
   );
 };

@@ -50,7 +50,9 @@ export const Card = ({
 
       <h3 className="font-bold text-base">{nombre}</h3>
       <h4 className="text-sm text-on-surface-variant">{artista}</h4>
-      <p className="text-xs text-on-surface-variant">{genero} · {anio}</p>
+      <p className="text-xs text-on-surface-variant">
+        {genero} · {anio}
+      </p>
       <p className="text-lg font-bold text-on-surface">
         {formatearPrecio(precio)}
       </p>

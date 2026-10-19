@@ -4,7 +4,6 @@ import { CarritoModal } from "./components/CarritoModal";
 import { useToggle } from "./hooks/useToggle";
 import { useCarritoContexto } from "./context/CarritoContext";
 import { Tienda } from "./components/views/Tienda";
-import { vinilos } from "./data/item";
 import { Footer } from "./components/layout/Footer";
 import { Formulario } from "./components/views/Checkout";
 import { Confirmacion } from "./components/views/Confirmacion";
@@ -58,7 +57,7 @@ function App() {
       <header className="sticky top-0 z-50">
         <BarraNavegacion setPanelAbierto={setPanelAbierto} />
       </header>
-      <main>
+      <main className="p-2">
         {vista === VISTAS.TIENDA && <Tienda />}
         {vista === VISTAS.CHECKOUT && <Formulario onConfirmar={confirmar} />}
         {vista === VISTAS.CONFIRMACION && (
