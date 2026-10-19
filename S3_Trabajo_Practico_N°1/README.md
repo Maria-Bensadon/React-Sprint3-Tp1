@@ -1,16 +1,46 @@
-# React + Vite
+# Nombre de tu tienda
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+🔗 **Demo:** https://tu-app.netlify.app
 
-Currently, two official plugins are available:
+## Qué es
+Es una aplicacion que permite comprar vinilos. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+## Cómo correrlo
+pnpm install && pnpm run dev
 
-## React Compiler
+## Mis contextos
+ 1) CarritoContext.jsx
+El contexto de carrito guarda todos los valores o props que usa MiCarrito, por ejemplo: 
+estaEnElCarrito, quitar, cambiarCantidad, agregarVinilo, etc.
+Lo consume App.jsx e hijos (NavBar.jsx, ProductoCard.jsx, CarritoModal.jsx, Checkout.jsx).
+El contexto es global, para poder evitar el prop drilling que es pasaje de props
+a traves del árbol, sin importar la profundidad del componente. Por ejemplo, un section utiliza un componente que necesita xprop, por tanto, el body, el main (y si hubiera algun div intermedio tambien), deberian pasarse xprop hasta llegar al section. 
+El contexto, permite simplificar esto. De manera que section, acceda de forma directa al xprop, sin que body o main se enteren o deban participar.  
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+ 2) ThemeContext.jsx
+El contexto de los temas, lo usa app. Permite cambiar la interfaz entre claro y oscuro. 
+Se utilizan las clases de @theme, y con IA se redefinieron las clases para los colores claros, siendo el tema oscuro el tema por default. 
+Se ubica en la barra de navegacion, la cual luego es invocada en App.jsx.
 
-## Expanding the Oxlint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+## Mis hooks
+ 1) useCarrito.js
+ Agrupa diferentes funciones que permiten al usuario gestionar la compra
+ de uno o varios vinilos. Estas funciones son devueltas como props, para ser utilizadas por otros componentes. 
+
+ 2) useLocalStorage.js
+ Contiene la logica del localStorage, el cual tiene como objetivo persistir la informarcion para que aun si se recarga la pagina, los datos puedan ser recuperables. El hook, simplifica el uso de esta funcion, recibiendo la clave y el contenedor (vector u objeto o ''). 
+
+## Decisiones de estado
+Qué estado NO puse en un contexto y por qué.
+
+## Prop drilling: antes y después
+En app, ya no se pasan miCarrito, agregarVinilo, vaciarLista. Es decir, ya no maneja o coordina las funciones de miCarrito, sino que gestiona los componentes de vistas (Tienda.jsx, Checkout.jsx, Confirmacion.jsx) las cuales agrupan, segun corresponda las diferentes funcionalidades.
+
+## Qué generé con IA
+Me costó entender el uso del contexto, o sea, entendi que era pero me costo entender como usarlo.
+El ThemeSwitcher lo habia hecho sin el context, primero siguiendo el video de la clase 3 del sprint 2.
+Y despues cuando lo empece a armarlo con el context, y el useEffect no sabia como armarlo.
+
+Me cuesta entender como o donde ponerlo en App.jsx. 
+

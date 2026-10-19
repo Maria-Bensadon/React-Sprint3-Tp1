@@ -8,13 +8,11 @@ import { Footer } from "./components/layout/Footer";
 import { Formulario } from "./components/views/Checkout";
 import { Confirmacion } from "./components/views/Confirmacion";
 import { VISTAS } from "./data/vistas";
+import { useLocalStorage } from "./hooks/useLocalStorage";
 
 function App() {
-  const { miCarrito, agregarVinilo, vaciarCarrito, carritoTotalUnidades } =
-    useCarritoContexto();
-
-  // PANEL
-  const [panelAbierto, setPanelAbierto] = useToggle(false); // valor boleano o bandera
+  // titulo de la pestaña
+  const { miCarrito, carritoTotalUnidades } = useCarritoContexto();
 
   useEffect(() => {
     if (carritoTotalUnidades === 0) {
@@ -24,9 +22,12 @@ function App() {
     }
   }, [miCarrito]);
 
-  // seria el data
-  const [pedido, setPedido] = useState(null);
+  const [panelAbierto, setPanelAbierto] = useToggle(false); // valor boleano o bandera
 
+  // seria el data
+  const [pedido, setPedido] = useLocalStorage("", {});
+
+  // vistas
   const [vista, setVista] = useState(VISTAS.TIENDA);
 
   const confirmar = (pedido) => {

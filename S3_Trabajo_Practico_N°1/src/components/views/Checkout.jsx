@@ -45,7 +45,7 @@ export const Formulario = ({ onConfirmar }) => {
   };
 
   return (
-    <div className="max-w-5xl mx-auto px-6 py-8 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
+    <div className="max-w-5xl mx-auto px-6 py-16 grid grid-cols-1 md:grid-cols-2 gap-6 items-start">
       {/* ---- Resumen ---- */}
       <section className="bauhaus-surface bauhaus-border bauhaus-shadow p-4">
         <h2 className="font-bold text-xl mb-4">Resumen</h2>

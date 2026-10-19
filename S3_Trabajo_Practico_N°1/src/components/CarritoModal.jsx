@@ -40,6 +40,7 @@ export const CarritoModal = ({ setPanelAbierto, irAlFormulario }) => {
                 <div className="flex items-center gap-4 mt-2 mb-2">
                   <div className="flex items-center gap-2">
                     <button
+                      aria-label='Restar un vinilo de ${vinilo.nombre}'
                       onClick={() => cambiarCantidad(vinilo.id, -1)}
                       className="btn-secondary bauhaus-interactive w-8 h-8 flex items-center justify-center font-bold cursor-pointer"
                     >
@@ -51,6 +52,7 @@ export const CarritoModal = ({ setPanelAbierto, irAlFormulario }) => {
                     </span>
 
                     <button
+                    aria-label='Sumar un vinilo de ${vinilo.nombre}'
                       disabled={vinilo.cantidad >= vinilo.stock}
                       onClick={() => cambiarCantidad(vinilo.id, 1)}
                       className="btn-secondary bauhaus-interactive w-8 h-8 flex items-center justify-center font-bold cursor-pointer disabled:opacity-50 disabled:cursor-not-allowed"
