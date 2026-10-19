@@ -11,7 +11,6 @@ importers:
       '@tailwindcss/vite':
         specifier: ^4.3.3
         version: 4.3.3(vite@8.3.1(jiti@2.7.0))
-<<<<<<< HEAD
       react:
         specifier: ^19.2.8
         version: 19.3.0
@@ -40,11 +39,6 @@ importers:
       vite:
         specifier: ^8.3.0
         version: 8.3.1(jiti@2.7.0)
-=======
-      tailwindcss:
-        specifier: ^4.3.3
-        version: 4.3.3
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
 
 packages:
 
@@ -67,7 +61,6 @@ packages:
   '@oxc-project/types@0.151.0':
     resolution: {integrity: sha512-J1yXrIlNDZVzE3ada310xeAw7nH8yCAyLPuUIsjKatFPmfn5bS1oW+cM+QsGOtVWd5nhSpbwZWx/rue+r5Z+PA==}
 
-<<<<<<< HEAD
   '@oxlint/binding-android-arm-eabi@1.85.0':
     resolution: {integrity: sha512-q2KO/Zso9UT+OMn0NF9ywn4E4t0MI3yxiDhNyhsQ7DyQJrC4FhFE4TXOi4bktFnOWXTMds8qZSbpv2XwRaNOBg==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -190,8 +183,6 @@ packages:
     cpu: [x64]
     os: [win32]
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   '@rolldown/binding-android-arm-eabi@1.2.11':
     resolution: {integrity: sha512-A5kXfGKvKWWZE0TtPrfsvT+q4Y5d1QG8gGUzpYjGydM+fARM9MuX90PrXYXe0XbsDVgyxxNzHo6giCj90bsFNw==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -385,7 +376,6 @@ packages:
     peerDependencies:
       vite: ^5.2.0 || ^6 || ^7 || ^8
 
-<<<<<<< HEAD
   '@types/react-dom@19.3.0':
     resolution: {integrity: sha512-ZI7bU42mZXXKHn/qNLEw2IrbiINU7X5+vfgdixBHkCNpYWXjKgfQ/P+uyGb5CjOLB9UcnTeg3rylQtV2hym44Q==}
     peerDependencies:
@@ -413,19 +403,12 @@ packages:
   csstype@3.2.3:
     resolution: {integrity: sha512-z1HGKcYy2xA8AGQfwrn0PAy+PB7X/GSj3UVJW9qKyn43xWa+gl5nXmU4qqLMRzWVLFC8KusUX8T/0kCiOYpAIQ==}
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   detect-libc@2.1.2:
     resolution: {integrity: sha512-Btj2BOOO83o3WyH59e8MgXsxEQVcarkUOpEYrubB0urwnN10yQ364rsiByU11nZlqWYZm05i/of7io4mzihBtQ==}
     engines: {node: '>=8'}
 
-<<<<<<< HEAD
   enhanced-resolve@5.26.0:
     resolution: {integrity: sha512-9vhedylFonb2YGogzUKX6+Ja72gOJbN1QHAqdrvqLwhdl/QWbKopzoUC9EbQNVsAns/bx/4uyqalrQAoy1IByw==}
-=======
-  enhanced-resolve@5.25.1:
-    resolution: {integrity: sha512-nGXts5znJzmWPu+mIE9izCOzdg63oJca2mDzGWWTth7sr4aCToKcoyFVBQwN75Ij5Pf6p510EwkTqViTRzDV+w==}
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
     engines: {node: '>=10.13.0'}
 
   fdir@6.5.0:
@@ -605,7 +588,6 @@ packages:
     engines: {node: ^10 || ^12 || ^13.7 || ^14 || >=15.0.1}
     hasBin: true
 
-<<<<<<< HEAD
   oxlint@1.85.0:
     resolution: {integrity: sha512-bc26s97nuvPj1ViyPsqmKecVkUWFMEdtayO8MaQ6oiLfs1pj94cQlZZhrh4BPNlr9HQosjhIlwgZKsfcwmcNgg==}
     engines: {node: ^20.19.0 || >=22.12.0}
@@ -619,8 +601,6 @@ packages:
       vite-plus:
         optional: true
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   picocolors@1.1.1:
     resolution: {integrity: sha512-xceH2snhtb5M9liqDsmEw56le376mTZkEX/jEb/RxNFyegNul7eNslCXP9FDj/Lcu0X8KEyMceP2ntpaHrDEVA==}
 
@@ -632,7 +612,6 @@ packages:
     resolution: {integrity: sha512-RRuzqDtt5Y9h3quz5hWhK+TPnsmVs6WwSU6LkJMeY4HstUEDuYTG8UJSdawMRzmzAtV+KEoG8N3Qg2qLy5vM/A==}
     engines: {node: ^10 || ^12 || >=14}
 
-<<<<<<< HEAD
   react-dom@19.3.0:
     resolution: {integrity: sha512-JDk8dgif51OjFoDE70+OT9ICyYr+69HlmihNwp1+Nsfbna3t5sIiCa9ZJktDmQ4/1b/rn26hIAR2uYXDMr5r0Q==}
     peerDependencies:
@@ -652,19 +631,14 @@ packages:
     resolution: {integrity: sha512-E8LUcbtBWt20bbl2YoHfx4ZDBdxVTfOKtCZn9cDSJ4l6/nuoApcpIBcj47t2wZoVX8g2ZHuMHbiShgCR1T5Sog==}
     engines: {node: '>=0.10.0'}
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   rolldown@1.2.11:
     resolution: {integrity: sha512-qpSwIyz0jHQq5qXBTNxFmE6664rJ7O+4TvPFOiOaBSrz8IOHc1koKKSqTM2H6u1UG1+TveuC6vaDHKXFOvb1Kw==}
     engines: {node: ^20.19.0 || >=22.12.0}
     hasBin: true
 
-<<<<<<< HEAD
   scheduler@0.28.0:
     resolution: {integrity: sha512-juorfCmIkIw8tT+p5BXSm6PJjQF/ycEYmKyzURCIt/RaZIhL+PulbQ9Yu2z1HdOJDdqDTlxA1+xKBmHXJsczAw==}
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   source-map-js@1.2.1:
     resolution: {integrity: sha512-UXWMKhLOwVKb728IUtQPXxfYU+usdybtUrK/8uGE8CQMvrhOpwvzDBwj0QhSL7MQc7vIsISBG8VQ8+IDQxpfQA==}
     engines: {node: '>=0.10.0'}
@@ -746,7 +720,6 @@ snapshots:
 
   '@oxc-project/types@0.151.0': {}
 
-<<<<<<< HEAD
   '@oxlint/binding-android-arm-eabi@1.85.0':
     optional: true
 
@@ -804,8 +777,6 @@ snapshots:
   '@oxlint/binding-win32-x64-msvc@1.85.0':
     optional: true
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   '@rolldown/binding-android-arm-eabi@1.2.11':
     optional: true
 
@@ -856,11 +827,7 @@ snapshots:
   '@tailwindcss/node@4.3.3':
     dependencies:
       '@jridgewell/remapping': 2.3.5
-<<<<<<< HEAD
       enhanced-resolve: 5.26.0
-=======
-      enhanced-resolve: 5.25.1
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
       jiti: 2.7.0
       lightningcss: 1.32.0
       magic-string: 0.30.21
@@ -925,7 +892,6 @@ snapshots:
       tailwindcss: 4.3.3
       vite: 8.3.1(jiti@2.7.0)
 
-<<<<<<< HEAD
   '@types/react-dom@19.3.0(@types/react@19.3.0)':
     dependencies:
       '@types/react': 19.3.0
@@ -944,11 +910,6 @@ snapshots:
   detect-libc@2.1.2: {}
 
   enhanced-resolve@5.26.0:
-=======
-  detect-libc@2.1.2: {}
-
-  enhanced-resolve@5.25.1:
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
     dependencies:
       graceful-fs: 4.2.11
       tapable: 2.3.3
@@ -1068,7 +1029,6 @@ snapshots:
 
   nanoid@3.3.19: {}
 
-<<<<<<< HEAD
   oxlint@1.85.0:
     optionalDependencies:
       '@oxlint/binding-android-arm-eabi': 1.85.0
@@ -1091,8 +1051,6 @@ snapshots:
       '@oxlint/binding-win32-ia32-msvc': 1.85.0
       '@oxlint/binding-win32-x64-msvc': 1.85.0
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   picocolors@1.1.1: {}
 
   picomatch@4.0.7: {}
@@ -1103,7 +1061,6 @@ snapshots:
       picocolors: 1.1.1
       source-map-js: 1.2.1
 
-<<<<<<< HEAD
   react-dom@19.3.0(react@19.3.0):
     dependencies:
       react: 19.3.0
@@ -1117,8 +1074,6 @@ snapshots:
 
   react@19.3.0: {}
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   rolldown@1.2.11:
     dependencies:
       '@oxc-project/types': 0.151.0
@@ -1140,11 +1095,8 @@ snapshots:
       '@rolldown/binding-win32-arm64-msvc': 1.2.11
       '@rolldown/binding-win32-x64-msvc': 1.2.11
 
-<<<<<<< HEAD
   scheduler@0.28.0: {}
 
-=======
->>>>>>> 5541c06980451edfc789e7e0211ba42643f6702a
   source-map-js@1.2.1: {}
 
   tailwindcss@4.3.3: {}
