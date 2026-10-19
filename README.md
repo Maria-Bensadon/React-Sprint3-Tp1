@@ -1,6 +1,6 @@
 # Nombre de tu tienda
 
-🔗 **Demo:** https://tu-app.netlify.app
+🔗 **Demo:** https://s3-onmusic.netlify.app/
 
 ## Qué es
 Es una aplicacion que permite comprar vinilos. 
