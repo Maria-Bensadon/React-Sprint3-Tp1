@@ -1,7 +1,7 @@
 // el gracias
 export const Confirmacion = ({ nombre, atras }) => {
   return (
-    <div className="max-w-3xl mx-auto px-6 py-12">
+    <section className="max-w-3xl mx-auto px-6 py-12">
       <div className="bauhaus-surface bauhaus-border bauhaus-shadow p-20 flex flex-col items-center text-center gap-4">
         <p className="text-on-surface-variant text-2xl">
           Hola {nombre}, ya recibimos tu pedido ☺️
@@ -15,6 +15,6 @@ export const Confirmacion = ({ nombre, atras }) => {
           Volver a la tienda
         </button>
       </div>
-    </div>
+    </section>
   );
 };

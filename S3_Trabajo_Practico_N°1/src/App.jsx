@@ -40,34 +40,34 @@ function App() {
   };
 
   const irAlFormulario = () => {
-    console.log("entro");
+    //console.log("entro");
     setPanelAbierto();
     setVista(VISTAS.CHECKOUT);
   };
 
   return (
     <>
-      <div>
+      <>
         {panelAbierto ? (
           <CarritoModal
             setPanelAbierto={setPanelAbierto}
             irAlFormulario={irAlFormulario}
           />
         ) : null}
-      </div>
-      <div className="sticky top-0 z-50">
+      </>
+      <header className="sticky top-0 z-50">
         <BarraNavegacion setPanelAbierto={setPanelAbierto} />
-      </div>
-      <div>
+      </header>
+      <main>
         {vista === VISTAS.TIENDA && <Tienda />}
         {vista === VISTAS.CHECKOUT && <Formulario onConfirmar={confirmar} />}
         {vista === VISTAS.CONFIRMACION && (
           <Confirmacion nombre={pedido.nombre} atras={atras} />
         )}
-      </div>
-      <div>
+      </main>
+      <footer>
         <Footer />
-      </div>
+      </footer>
     </>
   );
 }
