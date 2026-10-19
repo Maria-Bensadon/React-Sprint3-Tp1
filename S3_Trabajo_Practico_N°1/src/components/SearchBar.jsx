@@ -5,7 +5,7 @@ export const BarraBusqueda = ({ busqueda, setBusqueda }) => {
         id="buscador"
         type="text"
         placeholder="Buscar vinilo"
-        className="w-full px-4 py-2 bauhaus-border bauhaus-surface text-on-surface-variant rounded-lg outline-none focus:border-(--color-primary)"
+        className="w-full px-4 py-2 bauhaus-border bauhaus-surface text-on-surface-variant rounded-lg outline-none focus:border-(--color-primary) placeholder:opacity-40 "
         value={busqueda}
         // Evento
         onChange={(evento) => {

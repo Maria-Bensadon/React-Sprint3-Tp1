@@ -233,3 +233,17 @@ body {
     color: #6b4e00;
     border-color: #6b4e00;
 }
+
+/* Autocompletado del navegador: evita que pinte los campos de blanco */
+input:-webkit-autofill,
+textarea:-webkit-autofill {
+    /* El navegador no deja cambiar el background de un campo autocompletado,
+       así que se tapa con una sombra interior del color de fondo de los inputs */
+    -webkit-box-shadow: 0 0 0 1000px var(--color-surface-container-lowest) inset;
+
+    /* Color del texto escrito (sin esto queda oscuro sobre fondo oscuro) */
+    -webkit-text-fill-color: var(--color-on-surface);
+
+    /* Color del cursor al escribir */
+    caret-color: var(--color-on-surface);
+}
