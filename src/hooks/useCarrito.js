@@ -4,10 +4,8 @@ export const useMiCarrito = () => {
   // carrito
   const [miCarrito, setMiCarrito] = useLocalStorage("OnMusic:Micarrito", []);
 
-  // TOGGLE: agrega
   const agregarVinilo = (vinilo) => {
     setMiCarrito((carrito) => {
-      // falta:
       const encontrada = carrito.some((item) => item.id === vinilo.id);
 
       if (encontrada) {

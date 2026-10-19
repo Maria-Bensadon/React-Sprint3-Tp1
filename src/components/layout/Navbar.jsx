@@ -12,9 +12,8 @@ export const BarraNavegacion = ({ setPanelAbierto }) => {
       >
         OnMusic
       </h1>
-      <button></button>
       <div className="flex items-center gap-3">
-        <ThemeSwitcher/>
+        <ThemeSwitcher />
         <button
           onClick={setPanelAbierto}
           className="btn-primary bauhaus-interactive bauhaus-shadow px-4 py-2 font-bold uppercase tracking-wider text-sm rounded-none cursor-pointer"

@@ -10,7 +10,7 @@ const claseInput =
   "w-full bg-surface-container-lowest text-on-surface border-2 border-outline px-3 py-2 placeholder:text-on-surface-variant placeholder:opacity-30  italic placeholder:text-sm focus-visible:outline-2 focus-visible:outline-primary aria-invalid:border-error";
 const claseError = "text-sm text-error";
 
-export const Formulario = ({ onConfirmar }) => {
+export const Formulario = ({ onConfirmar, atras }) => {
   const { miCarrito, totalPrecio, vaciarCarrito } = useCarritoContexto();
 
   const {
@@ -256,6 +256,13 @@ export const Formulario = ({ onConfirmar }) => {
           className="w-full btn-primary bauhaus-interactive bauhaus-shadow py-3 font-bold uppercase tracking-wider text-sm cursor-pointer"
         >
           Confirmar pedido
+        </button>
+        <button
+          type="button"
+          onClick={atras}
+          className="w-full btn-secondary bauhaus-interactive py-2 uppercase tracking-wider text-sm cursor-pointer"
+        >
+          Volver a la tienda
         </button>
       </form>
     </div>

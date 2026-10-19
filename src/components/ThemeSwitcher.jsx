@@ -4,7 +4,7 @@ export const ThemeSwitcher = () => {
   const { modoOscuro, temaOpuesto } = useThemeContext();
 
   return (
-    <button type="button" onClick={temaOpuesto}>
+    <button type="button" aria-label="Cambiar tema" onClick={temaOpuesto}>
       {modoOscuro ? "☀️" : "🌑"}
     </button>
   );
