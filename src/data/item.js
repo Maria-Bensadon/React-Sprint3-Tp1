@@ -1,0 +1,223 @@
+// src/data/productos.js
+
+export const vinilos = [
+  // Queen
+  {
+    id: 1,
+    nombre: "A Night at the Opera",
+    artista: "Queen",
+    anio: 1975,
+    genero: "Rock Clásico / Progresivo",
+    esAcustica: false,
+    precio: 18500,
+    stock: 5,
+  },
+  {
+    id: 2,
+    nombre: "Jazz",
+    artista: "Queen",
+    anio: 1978,
+    genero: "Rockabilly / Rock Clásico",
+    esAcustica: false,
+    precio: 16000,
+    stock: 3,
+  },
+
+  // Nirvana
+  {
+    id: 3,
+    nombre: "Nevermind",
+    artista: "Nirvana",
+    anio: 1991,
+    genero: "Grunge / Rock Alternativo",
+    esAcustica: false,
+    precio: 22000,
+    stock: 4,
+  },
+  {
+    id: 4,
+    nombre: "MTV Unplugged in New York",
+    artista: "Nirvana",
+    anio: 1994,
+    genero: "Acoustic Grunge",
+    esAcustica: true,
+    precio: 24000,
+    stock: 2,
+  },
+
+  // Blondie
+  {
+    id: 5,
+    nombre: "Parallel Lines",
+    artista: "Blondie",
+    anio: 1978,
+    genero: "New Wave / Punk Rock",
+    esAcustica: false,
+    precio: 15000,
+    stock: 0,
+  },
+  {
+    id: 6,
+    nombre: "Eat to the Beat",
+    artista: "Blondie",
+    anio: 1979,
+    genero: "New Wave / Power Pop",
+    esAcustica: false,
+    precio: 14000,
+    stock: 0,
+  },
+
+  // Radiohead
+  {
+    id: 7,
+    nombre: "The Bends",
+    artista: "Radiohead",
+    anio: 1995,
+    genero: "Rock Alternativo",
+    esAcustica: false,
+    precio: 20000,
+    stock: 0,
+  },
+  {
+    id: 8,
+    nombre: "OK Computer",
+    artista: "Radiohead",
+    anio: 1997,
+    genero: "Rock Alternativo / Art Rock",
+    esAcustica: false,
+    precio: 25000,
+    stock: 2,
+  },
+
+  // The White Stripes
+  {
+    id: 9,
+    nombre: "Elephant",
+    artista: "The White Stripes",
+    anio: 2003,
+    genero: "Garage Rock",
+    esAcustica: false,
+    precio: 19000,
+    stock: 5,
+  },
+  {
+    id: 10,
+    nombre: "White Blood Cells",
+    artista: "The White Stripes",
+    anio: 2001,
+    genero: "Garage Rock / Folk Rock",
+    esAcustica: false,
+    precio: 17000,
+    stock: 4,
+  },
+
+  // Green Day
+  {
+    id: 11,
+    nombre: "Dookie",
+    artista: "Green Day",
+    anio: 1994,
+    genero: "Punk Rock",
+    esAcustica: false,
+    precio: 16500,
+    stock: 6,
+  },
+  {
+    id: 12,
+    nombre: "Nimrod",
+    artista: "Green Day",
+    anio: 1997,
+    genero: "Punk Rock / Acoustic Rock",
+    esAcustica: false,
+    precio: 15500,
+    stock: 0,
+  },
+
+  // The Cranberries
+  {
+    id: 13,
+    nombre: "Everybody Else Is Doing It, So Why Can't We?",
+    artista: "The Cranberries",
+    anio: 1993,
+    genero: "Dream Pop / Jangle Pop",
+    esAcustica: false,
+    precio: 18000,
+    stock: 4,
+  },
+  {
+    id: 14,
+    nombre: "No Need to Argue",
+    artista: "The Cranberries",
+    anio: 1994,
+    genero: "Rock Alternativo / Grunge",
+    esAcustica: false,
+    precio: 19500,
+    stock: 0,
+  },
+
+  // Oasis
+  {
+    id: 15,
+    nombre: "(What's the Story) Morning Glory?",
+    artista: "Oasis",
+    anio: 1995,
+    genero: "Britpop / Rock",
+    esAcustica: false,
+    precio: 21000,
+    stock: 5,
+  },
+  {
+    id: 16,
+    nombre: "Definitely Maybe",
+    artista: "Oasis",
+    anio: 1994,
+    genero: "Britpop / Rock Alternativo",
+    esAcustica: false,
+    precio: 20000,
+    stock: 4,
+  },
+
+  // Kansas
+  {
+    id: 17,
+    nombre: "Leftoverture",
+    artista: "Kansas",
+    anio: 1976,
+    genero: "Rock Progresivo / Hard Rock",
+    esAcustica: false,
+    precio: 17500,
+    stock: 3,
+  },
+  {
+    id: 18,
+    nombre: "Point of Know Return",
+    artista: "Kansas",
+    anio: 1977,
+    genero: "Rock Progresivo / Folk Rock",
+    esAcustica: false,
+    precio: 16500,
+    stock: 2,
+  },
+
+  // AC/DC
+  {
+    id: 19,
+    nombre: "Back in Black",
+    artista: "AC/DC",
+    anio: 1980,
+    genero: "Hard Rock",
+    esAcustica: false,
+    precio: 23000,
+    stock: 5,
+  },
+  {
+    id: 20,
+    nombre: "Highway to Hell",
+    artista: "AC/DC",
+    anio: 1979,
+    genero: "Hard Rock",
+    esAcustica: false,
+    precio: 21500,
+    stock: 0,
+  },
+];
