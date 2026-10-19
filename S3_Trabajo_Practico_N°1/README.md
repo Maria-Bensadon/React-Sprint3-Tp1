@@ -38,7 +38,6 @@ Qué estado NO puse en un contexto y por qué.
 En app, ya no se pasan miCarrito, agregarVinilo, vaciarLista. Es decir, ya no maneja o coordina las funciones de miCarrito, sino que gestiona los componentes de vistas (Tienda.jsx, Checkout.jsx, Confirmacion.jsx) las cuales agrupan, segun corresponda las diferentes funcionalidades.
 
 ## Qué generé con IA
-En Card me ayudo con el manejo de la disponibilidad de los vinilos. 
 
 El ThemeSwitcher lo habia hecho sin el context, primero siguiendo el video de la clase 3 del sprint 2. Y despues cuando lo empece a armarlo con el context, y el useEffect no sabia como armarlo y me explico y me lo paso la IA.
 
