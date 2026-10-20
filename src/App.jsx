@@ -60,7 +60,7 @@ function App() {
       </header>
       <main className="p-2">
         {vista === VISTAS.TIENDA && <Tienda />}
-        {vista === VISTAS.CHECKOUT && <Formulario onConfirmar={confirmar} />}
+        {vista === VISTAS.CHECKOUT && <Formulario onConfirmar={confirmar}  atras={atras}/>}
         {vista === VISTAS.CONFIRMACION && (
           <Confirmacion nombre={pedido.nombre} atras={atras} />
         )}
